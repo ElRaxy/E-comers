@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComponetsStore | Ecomerce Website Design</title>
+    <title>Componets Store | Ecomerce Website Design</title>
     <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e816aaeb2a.js" crossorigin="anonymous"></script>
+    
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">-->
 </head>
 <body>
 
@@ -15,27 +16,27 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo1.png" width="155px">
+                    <img src="images/logo.png" width="155px">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div> 
             <div class="row">
                 <div class="col-2">
-                    <h1>Give Your Workout<br>A New Stle!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem itaque nemo ab aliquid vitae totam nihil sapiente perspiciatis ea!<br>Ex error porro maiores deleniti quisquam incidunt alias repellat accusamus.</p>
+                    <h1>Componets<br>Store</h1>
+                    <p>We are a company that sells gaming peripherals, although we also have products for more casual users.<br>We differentiate ourselves from our competitors by our unique, personalised and intimate treatment.</p>
                     <a href="" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2">
-                    <img src="images/image1.png">
+                    <img src="images/image1.png" id="imagen-principio">
                 </div>
             </div>
         </div>
@@ -43,67 +44,340 @@
 
 
 
-<!--featured categories PUENTE-->
-
+<!--Sections raxy-->
     <div class="categories">
         <div class="small-container">
+            <h2 class="title">Sections</h2>
             <div class="row">
                 <div class="col-3">
-                    <img src="images/category-1.jpg">
+                    <div class="category-item">
+                        <h3>Mouse</h3>
+                        <a href="mouse.html">
+                            <img src="images/category-1.jpg">
+                        </a>
+                     </div>
                 </div>
                 <div class="col-3">
-                    <img src="images/category-2.jpg">
+                    <div class="category-item">
+                        <h3>Keyboards</h3>
+                        <a href="keyboars.html">
+                            <img src="images/category-2.jpg">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-3">
-                    <img src="images/category-3.jpg">
+                    <div class="category-item">
+                        <h3>Screens</h3>   
+                        <a href="screens.html">
+                            <img src="images/category-3.jpg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    
-    
-<!------- testimonial -------->
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam placeat alias cupiditate, amet sapiente soluta voluptatem vel eius adipisci hic est! Excepturi eos fugit vel officiis suscipit aspernatur earum sed.</p>
+<!--featured products PUENTE-->
+    <div class="small-container">
+        <h2 id="products" class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html">
+                <img src="images/product-1.jpg">
+                <h4>Logitech G Pro SuperLight<br>Ratón Gaming 25600DPI
+                </h4>
+                <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
+                </div>
+                </a>
+                <p>123.90€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Varmilo VEA88 Moonlight Cherry MX Brown</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>129.95€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>BenQ ZOWIE XL2546K<br>240Hz DyAc FreeSync</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>489.99€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Varmilo VEA88 CMYK Cherry MX Brown</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>129.95€</p>
+            </div>
+        </div>
+<!--Latest Products-->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4> AOC 25G3ZM 24.5" LED FullHD 240Hz FreeSync Premium</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>146.99€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4> LG Ultragear 24GQ50F-B 24" LED FullHD 165Hz FreeSync </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>223.50€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4> Razer Basilisk V3 Ratón Óptico RGB 26000 DPI</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>99.99€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4> Steelseries Aerox 5 Ratón Óptico RGB 18000 DPI</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>85.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Logitech G502 Hero Raton Gaming 25600DPI</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>MSI Optix G24C4 23.6" LED FullHD 144Hz Freesync Curva</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>148.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Newskill Serike V2 Teclado Mecánico Gaming RGB</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>46.99€</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Tempest Diablo Teclado Mecánico Gaming RGB</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>30.50€</p>
+            </div>
+        </div>
+    </div>
+<!--offer puente-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Componets Store</p>
+                    <h1>Apple Watch Pro</h1>
+                    <small>Apple Watch Pro is a</small><br>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+<!------- testimonial -------->
+    <div class="testimonial">
+        <div class="small-container">
+            <h1 class="title">The First Opinions</h1>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>I come from the Logitech g pro x super light 1, I have to say that although there is not a big difference if you want the best from Logitech this is your choice, also if you are already used to the first version you will have no problem with this one.</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
                     <img src="images/user-1.png">
-                    <h3>Sean Parker</h3>
+                    <h3>Francisco Martínez</h3>
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam placeat alias cupiditate, amet sapiente soluta voluptatem vel eius adipisci hic est! Excepturi eos fugit vel officiis suscipit aspernatur earum sed.</p>
+                    <p>A keyboard of great quality as always of the Ducky brand, the price is higher than previous models, what I like most is not to depend on a program to handle all its functions. The keys are double injection, so they will last a long time. The illumination and is the key point for those who do not know is below the keys, the letters, numbers etc. are not illuminated.</p>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                     <img src="images/user-2.png">
-                    <h3>Mike Smith</h3>
+                    <h3>Alejandro Puente</h3>
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam placeat alias cupiditate, amet sapiente soluta voluptatem vel eius adipisci hic est! Excepturi eos fugit vel officiis suscipit aspernatur earum sed.</p>
+                    <p>The truth is that I have never had a tower but I was afraid to take a monitor of these dimensions and I was watching a thousand reviews of a thousand monitors and sincerely thank goodness I took this without doubt the best you can find on the market for this price certainly recommended 100% that even I have wanted to write this because there are few opinions and I like to read them and you will not regret even jokingly</p>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                     <img src="images/user-3.png">
-                    <h3>Mabel Joe</h3>
+                    <h3>Alex Robles</h3>
                 </div>
             </div>
         </div>
     </div>
+
+<!---------- brands ---------->
+    <div class="brands" id="about">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/pc_componetes.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/aoc-monitors.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/amazon_logo.png" width="100" height="150">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!------footer----->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accesible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2020 - Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+
+<!------ js for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems"); 
         
-        
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+
 </body>
 </html>

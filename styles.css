@@ -6,7 +6,9 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
 }
+
 
 .navbar{
     display: flex;
@@ -51,15 +53,37 @@ p{
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
+    border-radius: 20%;
 }
 .col-2 h1{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 }
+.col-3{
+    transition: transform 0.5s;
+}
+.col-3:hover:hover{
+    transform: translateY(-10px);
+}
+/* Sections */
+.category-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-item img {
+    width: 100%;
+}
+
+.category-item h3 {
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+}
 .btn{
     display: inline-block;
-    background: #ff523b;
+    background: #517580;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -67,21 +91,16 @@ p{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #563434;
+    background: #BFDAE3;
 }
 
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#C8E5EE,#D8F4FD);
 }
-.header row{
+
+.header .row{
     margin-top: 70px;
 }
-
-
-
-
-
-
 /* MA */
 
 .categories{
@@ -102,4 +121,350 @@ p{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #517580;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 45.5%;
+    transform: translate(-50);
+}
+.title-mouse{
+    text-align: auto;
+    margin: 0 left 80px;
+    line-height: 60px;
+    color: #555;
+}
+
+.title-keyboard{
+    text-align: auto;
+    margin: 0 left 80px;
+    line-height: 60px;
+    color: #555;
+}
+
+.title-screens{
+    text-align: auto;
+    margin: 0 left 80px;
+    line-height: 60px;
+    color: #555;
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #517580;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+/* - OFFER PUENTE - */
+
+.offer{
+    background: radial-gradient(#fff,#B2DEEB);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+    border-radius: 10px;
+}
+
+small{
+    color: #000000;
+}
+/*---------testimonial---------*/
+
+
+
+
+.testimonial{
+    padding-top: 100px;
+    border-radius: 30px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #517580;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 10px;
+    color: #777;
+    height: 100px;
+    height: 250px;
+}
+
+.col-3 .fa{
+    color: #517580;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/*------------brands----------*/
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/*-------footer--------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{text-align: center;}
+/*-------menu-------*/
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*PRODUCTS PUENTE*/
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #517580;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #517580;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #517580;
+    color: #fff;
+}
+
+/*MOUSES.hmtl puente*/
+
+.glorius{
+    width: 83%;
+    margin-top: 45px;
+}
+
+/*-----------single product details------------*/
+
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+margin: 20px 0;
+font-size: 22px;
+font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #517580;
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    color: #517580;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/*---- cart items -----------*/
+
+
+
+
+/*---------------- media query for menu ---------*/
+@media only screen and (max-width: 800px){
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*----- media query for less than 600 screen size ---*/ 
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
 }
