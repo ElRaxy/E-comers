@@ -11,38 +11,37 @@
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">-->
 </head>
 <body>
-
     <div class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" width="155px">
+                    <a href="index.html"><img src="images/logo.png" width="155px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="">Account</a></li>
+                        <li><a href="acount.html">Account</a></li>
                     </ul>
                 </nav>
-                <img src="images/cart.png" width="30px" height="30px">
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div> 
             <div class="row">
                 <div class="col-2">
                     <h1>Componets<br>Store</h1>
-                    <p>We are a company that sells gaming peripherals, although we also have products for more casual users.<br>We differentiate ourselves from our competitors by our unique, personalised and intimate treatment.</p>
+                    <div class="texto">
+                        <p>We are a company that sells gaming peripherals, although we also have products for more casual users.<br>We differentiate ourselves from our competitors by our unique, personalised and intimate treatment.</p>
+                    </div>
                     <a href="" class="btn">Explore Now &#8594;</a>
                 </div>
-                <div class="col-2">
-                    <img src="images/image1.png" id="imagen-principio">
+                <div class="imagen-1">
+                    <img src="images/image1.png" height="500px" width="400px">
                 </div>
             </div>
         </div>
     </div>
-
-
 
 <!--Sections raxy-->
     <div class="categories">
@@ -81,7 +80,7 @@
         <h2 id="products" class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <a href="product-details.html">
+                <a href="Logitech G Pro.html">
                 <img src="images/product-1.jpg">
                 <h4>Logitech G Pro SuperLight<br>Ratón Gaming 25600DPI
                 </h4>
@@ -96,7 +95,8 @@
                 <p>123.90€</p>
             </div>
             <div class="col-4">
-                <img src="images/product-2.jpg">
+                <a href="Varmilo VEA88.html">
+                <img src="images/product-2-index.png">
                 <h4>Varmilo VEA88 Moonlight Cherry MX Brown</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -105,9 +105,11 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
+                </a>
                 <p>129.95€</p>
             </div>
             <div class="col-4">
+                <a href="BenQ Zowie.html">
                 <img src="images/product-3.jpg">
                 <h4>BenQ ZOWIE XL2546K<br>240Hz DyAc FreeSync</h4>
                 <div class="rating">
@@ -117,10 +119,11 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
+                </a>
                 <p>489.99€</p>
             </div>
             <div class="col-4">
-                <img src="images/product-4.jpg">
+                <img src="images/product-4-index.png">
                 <h4>Varmilo VEA88 CMYK Cherry MX Brown</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -241,10 +244,12 @@
                     <img src="images/exclusive.png" class="offer-img">
                 </div>
                 <div class="col-2">
-                    <p>Exclusively Available on Componets Store</p>
-                    <h1>Apple Watch Pro</h1>
-                    <small>Apple Watch Pro is a</small><br>
-                    <a href="" class="btn">Buy Now &#8594;</a>
+                    <div class="apple-text">
+                        <p>Exclusively Available on Componets Store</p>
+                        <h1>Apple Watch Pro</h1>
+                        <small>The Apple Watch, a stylish and functional device, unites fashion and technology for health tracking and instant notifications from your wrist. It offers a range of apps and a customizable design to suit every style.</small><br>
+                        <a href="applewacth.html" class="btn">Buy Now &#8594;</a>
+                    </div>
                 </div>
             </div>
         </div>
