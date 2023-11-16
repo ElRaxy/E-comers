@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - Componets Store</title>
+    <title>All Products - Components Store</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e816aaeb2a.js" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" width="155px">
+                    <a href="index.html"><img src="images/logo.png" width="155px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -49,7 +49,7 @@
                     </div>
                 </td>
                 <td><input type="number" value="1"min="1"></td>
-                <td>50.00€</td>
+                <td>123.90€</td>
             </tr>
             <tr>
                 <td>
@@ -64,7 +64,7 @@
                     </div>
                 </td>
                 <td><input type="number" value="1" min="1"></td>
-                <td>50.00€</td>
+                <td>129.95€</td>
             </tr>
             <tr>
                 <td>
@@ -79,14 +79,62 @@
                     </div>
                 </td>
                 <td><input type="number" value="1" min="1"></td>
-                <td>50.00€</td>
+                <td>489.99</td>
             </tr>
         </table>
         </div>
-
-
+    </div>
 </div>
+<div class="total-container">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td id="subtotal">0.00€</td>
+        </tr>
+        <tr>
+            <td>Tax (10%)</td>
+            <td id="tax">0.00€</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td id="total">0.00€</td>
+        </tr>
+    </table>
+</div>
+</div>
+<!------ js for toggle menu and calculate total ------>
+    <script>
+        function updateTotal() {
+            var quantityInputs = document.querySelectorAll('.cart-page input[type="number"]');
+            var subtotalElement = document.getElementById('subtotal');
+            var taxElement = document.getElementById('tax');
+            var totalElement = document.getElementById('total');
 
+            var subtotal = 0;
+
+            quantityInputs.forEach(function(input, index) {
+                var price = parseFloat(input.closest('tr').querySelector('.cart-info small').innerText.replace('Price: ', '').replace('€', ''));
+                var quantity = parseFloat(input.value);
+                subtotal += price * quantity;
+            });
+
+            var tax = subtotal * 0.10; // Assuming 10% tax
+            var total = subtotal + tax;
+
+            // Update the displayed values
+            subtotalElement.innerText = subtotal.toFixed(2) + '€';
+            taxElement.innerText = tax.toFixed(2) + '€';
+            totalElement.innerText = total.toFixed(2) + '€';
+        }
+
+    // Event listener to recalculate total when quantity changes
+            var quantityInputs = document.querySelectorAll('.cart-page input[type="number"]');
+            quantityInputs.forEach(function(input) {
+                input.addEventListener('input', updateTotal);
+            });
+
+            updateTotal();
+    </script>
 <!------footer----->
 
 <div class="footer">
